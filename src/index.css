@@ -1,0 +1,46 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("./_fonts/Satoshi-Regular.ttf");
+}
+
+* {
+  font-family: "Satoshi";
+}
+
+.disable-coppy {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.disable-select {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.bg-custom {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.02),
+      rgba(255, 255, 255, 0.02)
+    ),
+    #2a3a75;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.-rotate-90 {
+  transform: rotate(-90deg);
+}
